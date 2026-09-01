@@ -7,9 +7,8 @@ export function Hero() {
       {/* Background Image */}
       <div 
         className="absolute inset-0 bg-cover bg-center bg-no-repeat"
-        style={{ backgroundImage: 'url(https://images.unsplash.com/photo-1517457224213-91db4da9236d?q=80&w=2940&auto=format&fit=crop)' }}
+        style={{ backgroundImage: 'url(/hero.webp)' }}
       >
-        <div className="absolute inset-0 bg-black/30" /> {/* Overlay */}
       </div>
 
       <div className="relative z-10 w-full max-w-7xl mx-auto px-6 md:px-12 h-full flex flex-col justify-center">
