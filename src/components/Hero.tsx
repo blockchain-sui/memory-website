@@ -12,22 +12,22 @@ export function Hero() {
       </div>
 
       <div className="relative z-10 w-full max-w-7xl mx-auto px-6 md:px-12 h-full flex flex-col justify-center">
-        <div className="max-w-2xl text-white mt-12">
-          <h1 className="font-serif text-6xl md:text-[5.5rem] leading-[1.1] mb-16 md:mb-20">
+        <div className="max-w-2xl text-white">
+          <h1 className="font-serif text-6xl md:text-8xl leading-tight mb-4">
             Аня<br />Иванова
           </h1>
           
-          <div className="flex items-center gap-4 mb-10 md:mb-12">
-            <span className="text-xl md:text-2xl tracking-widest">2012 — 2024</span>
+          <div className="flex items-center gap-4 my-6">
+            <span className="text-xl tracking-widest">2012 — 2024</span>
           </div>
           
-          <div className="flex items-center gap-4 mb-16 md:mb-20 w-72">
+          <div className="flex items-center gap-4 mb-8 w-64">
             <div className="h-px bg-white/60 flex-1"></div>
             <Heart className="w-4 h-4 text-white/80" strokeWidth={1.5} />
             <div className="h-px bg-white/60 flex-1"></div>
           </div>
 
-          <p className="text-lg md:text-2xl font-light italic opacity-90 max-w-sm leading-relaxed">
+          <p className="text-lg md:text-xl font-light italic opacity-90 max-w-sm">
             Она любила жизнь<br />и умела делать её светлее.
           </p>
         </div>

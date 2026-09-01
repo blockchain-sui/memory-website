@@ -9,7 +9,7 @@ export function Navbar() {
         <Heart className="w-4 h-4" strokeWidth={1.5} />
       </div>
       
-      <div className="hidden md:flex items-center gap-8 text-sm font-medium tracking-wide">
+      <div className="hidden md:flex items-center gap-10 lg:gap-16 text-sm font-medium tracking-wide">
         <a href="#about" className="hover:opacity-80 transition-opacity">О ней</a>
         <a href="#photos" className="hover:opacity-80 transition-opacity">Фотографии</a>
         <a href="#videos" className="hover:opacity-80 transition-opacity">Видео</a>

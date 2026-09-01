@@ -5,25 +5,25 @@ const moments = [
   {
     title: 'Фотографии',
     count: '523 фото',
-    image: 'https://images.unsplash.com/photo-1516961642265-531546e84af2?q=80&w=2787&auto=format&fit=crop',
+    image: '/save1.webp',
     href: '#photos'
   },
   {
     title: 'Видео',
     count: '32 видео',
-    image: 'https://images.unsplash.com/photo-1516280440502-9988bf275ec9?q=80&w=2787&auto=format&fit=crop',
+    image: '/save2.webp',
     href: '#videos'
   },
   {
     title: 'Истории',
     count: '18 историй',
-    image: 'https://images.unsplash.com/photo-1455390582262-044cdead27d8?q=80&w=2873&auto=format&fit=crop',
+    image: '/save3.webp',
     href: '#stories'
   },
   {
     title: 'Воспоминания',
     count: '67 воспоминаний',
-    image: 'https://images.unsplash.com/photo-1473186578172-c141e6798cf4?q=80&w=2773&auto=format&fit=crop',
+    image: '/save4.webp',
     href: '#memories'
   }
 ];

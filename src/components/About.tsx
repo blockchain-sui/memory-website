@@ -1,51 +1,72 @@
-import { Heart } from 'lucide-react';
 import React from 'react';
 
+const DrawnHeart = ({ className }: { className?: string }) => (
+  <svg 
+    viewBox="0 0 100 100" 
+    fill="none" 
+    stroke="currentColor" 
+    strokeWidth="3.5" 
+    strokeLinecap="round" 
+    strokeLinejoin="round" 
+    className={className}
+  >
+    <path d="M50 83 C18 56 10 38 14 22 C17 10 30 8 40 16 C45 20 48 27 50 31 C52 27 57 18 63 14 C73 7 86 10 87 23 C89 39 79 57 50 83" />
+  </svg>
+);
+
 const thumbnails = [
-  "https://images.unsplash.com/photo-1534528741775-53994a69daeb?q=80&w=2864&auto=format&fit=crop",
-  "https://images.unsplash.com/photo-1524250502761-1ac6f2e30d43?q=80&w=2776&auto=format&fit=crop",
-  "https://images.unsplash.com/photo-1502823403499-6ccfcf4fb453?q=80&w=2787&auto=format&fit=crop",
-  "https://images.unsplash.com/photo-1517365830460-955ce3ccd263?q=80&w=2864&auto=format&fit=crop",
-  "https://images.unsplash.com/photo-1517841905240-472988babdf9?q=80&w=2787&auto=format&fit=crop",
-  "https://images.unsplash.com/photo-1526413232644-8a40f4110330?q=80&w=2940&auto=format&fit=crop"
+  "/about1.webp",
+  "/about2.webp",
+  "/about3.webp",
+  "/about4.webp",
+  "/about5.webp",
+  "/about6.webp"
 ];
 
 export function About() {
   return (
     <section id="about" className="py-24 px-6 md:px-12 max-w-7xl mx-auto">
-      <div className="grid grid-cols-1 lg:grid-cols-12 gap-16 items-start">
+      <div className="grid grid-cols-1 lg:grid-cols-12 gap-10 lg:gap-16 items-start">
         
         {/* Text Content */}
-        <div className="lg:col-span-5 flex flex-col justify-center h-full pt-12">
-          <p className="text-sm tracking-[0.2em] uppercase text-[var(--color-brand-muted)] mb-4">О ней</p>
-          <div className="flex items-start gap-4 mb-8">
-            <h2 className="font-serif text-5xl md:text-6xl text-[var(--color-brand-text)] leading-tight">
-              Она была<br />особенной
+        <div className="lg:col-span-4 flex flex-col justify-center h-full pt-4 md:pt-12">
+          <p className="text-xs tracking-[0.2em] uppercase text-[var(--color-brand-muted)] mb-4">О ней</p>
+          <div className="mb-6">
+            <h2 className="font-serif text-3xl md:text-[40px] text-[var(--color-brand-text)] leading-[1.2]">
+              <span className="relative inline-block">
+                Она была
+                <DrawnHeart className="absolute -right-16 top-1/2 -translate-y-[45%] w-10 h-10 text-[var(--color-brand-accent)] opacity-80" />
+              </span><br />
+              особенной
             </h2>
-            <Heart className="w-12 h-12 text-[var(--color-brand-accent)] mt-2 opacity-80" strokeWidth={1} />
           </div>
           
-          <div className="text-[var(--color-brand-text)] opacity-80 space-y-4 text-lg leading-relaxed mb-10 max-w-md">
+          <div className="text-[var(--color-brand-text)] opacity-80 text-[13px] md:text-[14px] leading-[1.8] mb-8">
             <p>
-              Аня была доброй, искренней и очень светлой. Она любила музыку, танцы, котов и путешествия. Умела смеяться так, что смеялись все вокруг. Верила в людей и всегда старалась помочь. Она оставила в наших сердцах столько тепла и света.
+              Аня была доброй, искренней и очень светлой.<br />
+              Она любила музыку, танцы, котов и путешествия.<br />
+              Умела смеяться так, что смеялись все вокруг.<br />
+              Верила в людей и всегда старалась помочь.<br />
+              Она оставила в наших сердцах<br />
+              столько тепла и света.
             </p>
           </div>
 
-          <button className="bg-[var(--color-brand-accent)] text-white px-8 py-3 rounded-full w-fit hover:bg-opacity-90 transition-all font-medium text-sm">
+          <button className="bg-[var(--color-brand-accent)] text-white px-7 py-2.5 rounded-full w-fit hover:bg-opacity-90 transition-all font-medium text-[13px]">
             Читать больше о ней
           </button>
         </div>
 
         {/* Image Grid */}
-        <div className="lg:col-span-7 flex flex-col gap-4">
-          <div className="w-full aspect-[16/9] md:aspect-[21/9] rounded-2xl overflow-hidden shadow-sm">
+        <div className="lg:col-span-8 flex flex-col gap-3">
+          <div className="w-full aspect-[16/9] md:aspect-[2/1] rounded-2xl overflow-hidden shadow-sm">
             <img 
-              src="https://images.unsplash.com/photo-1494790108377-be9c29b29330?q=80&w=2787&auto=format&fit=crop" 
+              src="/about1.webp" 
               alt="Аня" 
               className="w-full h-full object-cover"
             />
           </div>
-          <div className="grid grid-cols-3 md:grid-cols-6 gap-4">
+          <div className="grid grid-cols-3 md:grid-cols-6 gap-3">
             {thumbnails.map((src, i) => (
               <div key={i} className="aspect-[4/3] rounded-lg overflow-hidden shadow-sm">
                 <img 

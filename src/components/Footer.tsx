@@ -7,7 +7,7 @@ export function Footer() {
       {/* Background Image / Collage */}
       <div 
         className="absolute inset-0 bg-cover bg-center bg-no-repeat opacity-60"
-        style={{ backgroundImage: 'url(https://images.unsplash.com/photo-1501162946741-4960f913dff0?q=80&w=2940&auto=format&fit=crop)' }}
+        style={{ backgroundImage: 'url(/footer.webp)' }}
       >
         <div className="absolute inset-0 bg-gradient-to-t from-[#fbfaf8]/80 to-[#fbfaf8]/20" />
       </div>
