@@ -1,0 +1,6 @@
+{
+  "name": "Светлая память",
+  "description": "Сайт памяти",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

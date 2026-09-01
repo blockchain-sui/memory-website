@@ -1,0 +1,20 @@
+@import "tailwindcss";
+
+@theme {
+  --color-brand-bg: #fbfaf8;
+  --color-brand-accent: #c29b99;
+  --color-brand-text: #3d3935;
+  --color-brand-muted: #706c69;
+  --color-brand-card: #ffffff;
+  --color-brand-footer: #eae6e0;
+
+  --font-serif: "Cormorant Garamond", serif;
+  --font-sans: "Montserrat", sans-serif;
+  --font-hand: "Caveat", cursive;
+}
+
+body {
+  background-color: var(--color-brand-bg);
+  color: var(--color-brand-text);
+  font-family: var(--font-sans);
+}
